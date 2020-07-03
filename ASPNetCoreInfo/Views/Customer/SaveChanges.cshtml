@@ -1,0 +1,16 @@
+﻿@model SaveChangesViewModel
+
+  
+   <h3 class="alert alert-success">Müşteri Ekle:</h3>
+    <form asp-controller="Customer" asp-action="SaveChanges">
+     ID:   <input asp-for="Customer.Id" /><br />
+      AD:  <input asp-for="Customer.Name" /><br />
+      SOYAD: <input asp-for="Customer.Lastname" /><br />
+      SEHIR: <select asp-for="Customer.City" asp-items="Model.Cities"></select> <br/>
+        <button type="submit"></button>
+    </form>
+@section myScripts{ 
+boş adam boş gezer devamke
+}
+
+
